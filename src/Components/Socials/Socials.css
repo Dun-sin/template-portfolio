@@ -26,8 +26,6 @@
 	background: #181721;
 	border-radius: 13%;
 	box-shadow: inset 5px 5px 7px #12111b, inset -5px -5px 7px #181721;
-	/* box-shadow: inset 18.92px 18.92px 15px #12111b,
-		inset -18.92px -18.92px 15px #181721; */
 }
 
 .social div svg {
@@ -72,6 +70,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+	.social div {
+		max-width: 100%;
+	}
 	.social {
 		justify-content: center;
 	}
