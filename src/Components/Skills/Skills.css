@@ -18,7 +18,7 @@
 	margin-bottom: 20px;
 	min-height: var(--skill-size);
 	width: var(--skill-size);
-	background-color: white;
+	background-color: #ffffffe6;
 	display: grid;
 	place-items: center;
 	border-radius: 20px;
