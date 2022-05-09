@@ -24,8 +24,10 @@
 	width: calc(var(--social-size) - 50px);
 	margin-top: 20px;
 	background: #181721;
-	border-radius: 13%;
-	box-shadow: inset 5px 5px 7px #12111b, inset -5px -5px 7px #181721;
+	border: solid;
+	border-image-slice: 1;
+	border-width: 2px;
+	border-image-source: linear-gradient(to left, #6253e8, #1da1f2);
 }
 
 .social div:not(:first-of-type) {
