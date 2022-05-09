@@ -1,0 +1,28 @@
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav h1 {
+	font-size: 1.3em;
+	cursor: pointer;
+}
+
+.nav ul {
+	display: flex;
+}
+
+.nav ul li {
+	list-style: none;
+	margin-left: 4em;
+	border-bottom: solid #232135;
+	border-image-slice: 1;
+	border-width: 2px;
+}
+
+.nav ul li:hover,
+.nav ul li:active {
+	cursor: pointer;
+	border-image-source: linear-gradient(to right, #6253e8, #1da1f2);
+}

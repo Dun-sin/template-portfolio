@@ -1,0 +1,58 @@
+:root {
+	--input-width: 400px;
+	--cubeSize: 300px;
+}
+
+.mail {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.entry input,
+.entry textarea {
+	background-color: #181721;
+	width: var(--input-width);
+	border: 1px solid #6253e8;
+	border-radius: 4px;
+	caret-color: #6253e8;
+	padding-left: 10px;
+	color: #f5f5f5;
+}
+
+.entry input:active,
+.entry textarea:active,
+.entry input:focus,
+.entry textarea:focus {
+	outline: none;
+	background-color: #181721;
+}
+
+.entry input {
+	min-height: 40px;
+}
+
+.entry textarea {
+	padding-top: 10px;
+	resize: none;
+}
+
+.entry div:not(.btn) {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.entry div:not(.btn) label {
+	margin-bottom: 5px;
+}
+
+.btn {
+	cursor: pointer;
+	background-color: #6253e8;
+	width: calc(var(--input-width) / 2);
+	min-height: 35px;
+	display: grid;
+	place-items: center;
+	border-radius: 5px;
+	margin-top: 10px;
+}

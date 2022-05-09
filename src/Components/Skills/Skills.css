@@ -1,0 +1,57 @@
+:root {
+	--skill-color: black;
+	--container-width: 600px;
+	--skill-size: calc(var(--container-width) / 5);
+}
+
+.skills {
+	width: var(--container-width);
+}
+
+.skill {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.skill div {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	min-height: var(--skill-size);
+	width: var(--skill-size);
+	background-color: white;
+	display: grid;
+	place-items: center;
+	border-radius: 20px;
+}
+
+.skill div svg {
+	min-height: calc(var(--skill-size) - 40px);
+	width: calc(var(--skill-size)- 40px);
+	color: var(--skill-color);
+	transition: all 390ms ease-in-out;
+}
+
+.js:hover {
+	--skill-color: #fddd00;
+}
+.html:hover {
+	--skill-color: #f1662a;
+}
+.css:hover {
+	--skill-color: #1572b6;
+}
+.react:hover {
+	--skill-color: #00d8ff;
+}
+.node:hover {
+	--skill-color: #539e43;
+}
+.fig:hover {
+	--skill-color: #a259ff;
+}
+.mon:hover {
+	--skill-color: #41a247;
+}
+.fire:hover {
+	--skill-color: #eeab37;
+}
