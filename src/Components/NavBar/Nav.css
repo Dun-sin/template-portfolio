@@ -1,11 +1,11 @@
-.nav {
+.nav > div {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
 .nav h1 {
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	cursor: pointer;
 }
 
@@ -15,7 +15,7 @@
 
 .nav ul li {
 	list-style: none;
-	margin-left: 4em;
+	margin-left: 4rem;
 	border-bottom: solid #232135;
 	border-image-slice: 1;
 	border-width: 2px;
@@ -25,4 +25,35 @@
 .nav ul li:active {
 	cursor: pointer;
 	border-image-source: linear-gradient(to right, #6253e8, #1da1f2);
+}
+
+.nav svg,
+.small {
+	display: none;
+}
+
+@media only screen and (max-width: 760px) {
+	.large {
+		display: none;
+	}
+
+	.nav svg {
+		display: block;
+	}
+
+	.small {
+		border: 1px solid #1da1f2;
+		border-left: 0px;
+		border-right: 0px;
+	}
+
+	.small ul {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.small ul li {
+		margin-left: 0;
+		width: fit-content;
+	}
 }

@@ -1,6 +1,5 @@
 :root {
 	--input-width: 400px;
-	--cubeSize: 300px;
 }
 
 .mail {
@@ -55,4 +54,15 @@
 	place-items: center;
 	border-radius: 5px;
 	margin-top: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+	:root {
+		--input-width: 300px;
+	}
+}
+@media only screen and (max-width: 380px) {
+	:root {
+		--input-width: 280px;
+	}
 }

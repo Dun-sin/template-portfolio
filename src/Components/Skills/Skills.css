@@ -55,3 +55,14 @@
 .fire:hover {
 	--skill-color: #eeab37;
 }
+
+@media only screen and (max-width: 600px) {
+	:root {
+		--container-width: 500px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	:root {
+		--container-width: 380px;
+	}
+}

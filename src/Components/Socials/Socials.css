@@ -37,7 +37,7 @@
 }
 
 .social div p {
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: 200;
 }
 
@@ -73,4 +73,10 @@
 .link {
 	--social-main-color: rgb(0, 119, 181);
 	--social-border-color: rgba(0, 119, 181, 0.3);
+}
+
+@media only screen and (max-width: 600px) {
+	.social {
+		justify-content: center;
+	}
 }

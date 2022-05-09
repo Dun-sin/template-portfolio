@@ -38,3 +38,10 @@ h2 {
 .arrow svg {
 	color: #6253e8;
 }
+
+@media only screen and (max-width: 800px) {
+	.App > div {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}

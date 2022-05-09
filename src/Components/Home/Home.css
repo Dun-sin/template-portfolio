@@ -3,14 +3,14 @@
 }
 
 .home {
-	/* margin-top: 60px; */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding-bottom: 40px;
 }
 
 .home-text h1 {
-	font-size: 3em;
+	font-size: 3rem;
 }
 
 .home-text h1 span {
@@ -21,13 +21,13 @@
 }
 
 .home-text p {
-	margin-top: -1.2em;
-	font-size: 2em;
+	margin-top: -1.2rem;
+	font-size: 2rem;
 	font-weight: 300;
 }
 
 .btns {
-	margin-top: -1em;
+	margin-top: -1rem;
 	display: flex;
 }
 
@@ -56,4 +56,34 @@
 		radial-gradient(circle at top left, #1da1f2, #6253e8);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
+}
+
+@media only screen and (max-width: 700px) {
+	.home-text h1 {
+		font-size: 2.5rem;
+	}
+
+	.home-text p {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.home-text h1 {
+		font-size: 2rem;
+	}
+
+	.home-text p {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.btn1 {
+		width: 90px;
+	}
+
+	.btn2 {
+		width: 120px;
+	}
 }
