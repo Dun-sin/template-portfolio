@@ -28,6 +28,10 @@
 	box-shadow: inset 5px 5px 7px #12111b, inset -5px -5px 7px #181721;
 }
 
+.social div:not(:first-of-type) {
+	margin-left: 10px;
+}
+
 .social div svg {
 	min-height: var(--icon-size);
 	width: var(--icon-size);
@@ -70,10 +74,12 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.social div {
-		max-width: 100%;
-	}
 	.social {
 		justify-content: center;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.social div {
+		min-width: 100%;
 	}
 }
