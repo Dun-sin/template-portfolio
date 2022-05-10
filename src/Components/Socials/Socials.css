@@ -72,7 +72,7 @@
 	--social-main-color: rgb(0, 119, 181);
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 480px) {
 	.social div {
 		min-width: 100%;
 	}
