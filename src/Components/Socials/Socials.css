@@ -24,14 +24,11 @@
 	width: calc(var(--social-size) - 50px);
 	margin-top: 20px;
 	background: #181721;
-	border: solid;
-	border-image-slice: 1;
-	border-width: 0.2px;
-	border-image-source: linear-gradient(to left, #6253e8, #1da1f2);
+	border: 0.5px solid #6253e8;
 }
 
-.social div:not(:first-of-type) {
-	margin-left: 10px;
+.social div {
+	margin-right: 10px;
 }
 
 .social div svg {
@@ -75,11 +72,6 @@
 	--social-main-color: rgb(0, 119, 181);
 }
 
-@media only screen and (max-width: 600px) {
-	.social {
-		justify-content: center;
-	}
-}
 @media only screen and (max-width: 380px) {
 	.social div {
 		min-width: 100%;

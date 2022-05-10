@@ -7,8 +7,13 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(true)
 
+  const handleClick = () => {
+    console.log(isOpen)
+    console.log('sdfsf')
+    setIsOpen(!isOpen)
+  }
   const nav =
-    <ul>
+    <ul style={{ pointerEvents: 'auto' }}>
       <li>Home</li>
       <li>Projects</li>
       <li>About</li>
@@ -17,15 +22,18 @@ const Nav = () => {
 
   return (
     <div className='nav'>
-      <div>
+      <div className='header'>
         <h1>Favour</h1>
-        <GiHamburgerMenu onClick={() => setIsOpen(!isOpen)} />
+        <div onClick={handleClick} className="menu">
+          <GiHamburgerMenu />
+        </div>
         <div className='large' >
           {nav}
         </div>
       </div>
       <div className='small' style={{
-        display: isOpen ? 'none' : 'block'
+        opacity: isOpen ? '0' : '1',
+        pointerEvents: 'none'
       }}>
         {nav}
       </div>
