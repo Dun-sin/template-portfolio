@@ -14,7 +14,7 @@ const About = () => {
     return age_now;
   }
   return (
-    <div className='about'>
+    <div className='about' id="about">
       <h2>Get To Know Me</h2>
       <div className="words">
         <p>My name is Favour, a girl in tech who does cool and awesome things and who loves to make life easier and fun with code. I'm an {calculate_age()} years old full stack developer

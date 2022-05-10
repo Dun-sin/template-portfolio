@@ -4,7 +4,7 @@ import './Mail.css'
 
 const Mail = () => {
   return (
-    <div className='mail'>
+    <div className='mail' id='mail'>
       <h2>Get In Touch</h2>
       <div>
         <div className='entry'>

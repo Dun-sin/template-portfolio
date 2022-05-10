@@ -7,7 +7,7 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className='home' id='home'>
       <div className="home-text">
         <h1><span>
           Hi, I'm Favour!
