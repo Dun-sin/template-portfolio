@@ -12,13 +12,9 @@ const Nav = () => {
   const handleClick = () => {
     setIsOpen(!isOpen)
   }
+
   const nav =
     <ul style={{ pointerEvents: 'auto' }}>
-      <li>
-        <Link onClick={handleClick} activeClass="active" to="home" spy={true} smooth={true} offset={-80} duration={500}>
-          Home
-        </Link>
-      </li>
       {/* <li>Projects</li> */}
       <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
         About

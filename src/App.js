@@ -10,6 +10,7 @@ import Mail from './Components/Mail/Mail';
 
 // icon
 import { CgArrowLongUp } from 'react-icons/cg';
+import { animateScroll } from 'react-scroll';
 
 function App() {
 	return (
@@ -28,7 +29,7 @@ function App() {
 			</div>
 			<div className='dark'>
 				<p>Thank you for scrolling!</p>
-				<div className='arrow'>
+				<div className='arrow' onClick={() => animateScroll.scrollToTop()}>
 					<CgArrowLongUp />
 				</div>
 			</div>
