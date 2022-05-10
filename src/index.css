@@ -1,6 +1,7 @@
 /* width */
 ::-webkit-scrollbar {
 	width: 3px;
+	height: 3px;
 }
 
 /* Track */
@@ -35,6 +36,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	scroll-behavior: smooth;
+	scrollbar-color: #6253e8 #232135;
+	scrollbar-width: thin;
 }
 
 code {

@@ -11,12 +11,12 @@ const Socials = () => {
         <div className='insta'>
           <AiFillInstagram />
           <p>Instagram</p>
-          <a href="/">Let's Connect</a>
+          <a href="https://www.instagram.com/dunsincodes" target='_blank' rel='noreferrer'>Let's Connect</a>
         </div>
         <div className='git'>
           <AiFillGithub />
           <p>Github</p>
-          <a href="/">Let's Connect</a>
+          <a href="https://www.instagram.com/dunsincodes" target='_blank' rel='noreferrer'>Let's Connect</a>
         </div>
         <div className='twit'>
           <AiFillTwitterCircle />

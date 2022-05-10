@@ -21,14 +21,17 @@
 	color: transparent;
 }
 
-.home-text p {
-	margin-top: -1.2rem;
-	font-size: 2rem;
+.react-typewriter-text-wrap {
+	margin-top: -2.5rem;
+}
+
+.home-text .react-typewriter-text {
+	font-size: 1.7rem;
 	font-weight: 300;
 }
 
 .btns {
-	margin-top: -1rem;
+	margin-top: 0.5rem;
 	display: flex;
 }
 
@@ -60,11 +63,14 @@
 }
 
 @media only screen and (max-width: 700px) {
+	.home {
+		padding-top: 5rem;
+	}
 	.home-text h1 {
 		font-size: 2.5rem;
 	}
 
-	.home-text p {
+	.home-text .react-typewriter-text {
 		font-size: 1.5rem;
 	}
 }
@@ -74,7 +80,7 @@
 		font-size: 2rem;
 	}
 
-	.home-text p {
+	.home-text .react-typewriter-text {
 		font-size: 1.5rem;
 	}
 }
