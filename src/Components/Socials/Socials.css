@@ -74,6 +74,7 @@
 
 @media only screen and (max-width: 480px) {
 	.social div {
-		min-width: 100%;
+		min-width: 90%;
+		max-width: 90%;
 	}
 }

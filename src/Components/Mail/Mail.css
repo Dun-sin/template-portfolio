@@ -48,7 +48,7 @@
 .btn {
 	cursor: pointer;
 	background-color: #6253e8;
-	width: calc(var(--input-width) / 2);
+	width: calc(calc(var(--input-width) / 2) + 20px);
 	min-height: 35px;
 	display: grid;
 	place-items: center;
@@ -58,11 +58,6 @@
 
 @media only screen and (max-width: 500px) {
 	:root {
-		--input-width: 300px;
-	}
-}
-@media only screen and (max-width: 380px) {
-	:root {
-		--input-width: 280px;
+		--input-width: 230px;
 	}
 }
