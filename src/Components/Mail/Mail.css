@@ -58,6 +58,6 @@
 
 @media only screen and (max-width: 500px) {
 	:root {
-		--input-width: 230px;
+		--input-width: 245px;
 	}
 }
