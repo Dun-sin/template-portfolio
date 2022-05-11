@@ -23,7 +23,6 @@
 	min-height: var(--social-size);
 	width: calc(var(--social-size) - 50px);
 	margin-top: 20px;
-	margin-right: 10px;
 	background: #181721;
 	border: solid;
 	border-image-slice: 1;
