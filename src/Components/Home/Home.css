@@ -62,30 +62,62 @@
 	background-clip: content-box, border-box;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) and (min-width: 800px) {
 	.home {
 		padding-top: 5rem;
 	}
+
+	.home-text h1 {
+		font-size: 2.2rem;
+	}
+
+	.react-typewriter-text-wrap {
+		margin-top: -1.5rem;
+	}
+
+	.home-text .react-typewriter-text {
+		font-size: 1.5rem;
+		line-height: 0.9em;
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+	.home {
+		padding-top: 5rem;
+	}
+
 	.home-text h1 {
 		font-size: 2.5rem;
 	}
 
+	.react-typewriter-text-wrap {
+		margin-top: -1.5rem;
+	}
+
 	.home-text .react-typewriter-text {
 		font-size: 1.5rem;
+		line-height: 0.9em;
 	}
 }
 
 @media only screen and (max-width: 600px) {
+	.home {
+		padding-top: 5rem;
+	}
+
 	.home-text h1 {
-		font-size: 2rem;
+		font-size: 1.8rem;
+	}
+
+	.react-typewriter-text-wrap {
+		margin-top: -0.8rem;
 	}
 
 	.home-text .react-typewriter-text {
 		font-size: 1.5rem;
+		line-height: 0.9em;
 	}
-}
 
-@media only screen and (max-width: 360px) {
 	.btn1 {
 		width: 90px;
 	}

@@ -1,6 +1,6 @@
 :root {
 	--social-main-color: white;
-	--social-size: 300px;
+	--social-size: 200px;
 	--icon-size: calc(var(--social-size) / 3.75);
 }
 
@@ -45,9 +45,10 @@
 .social div a {
 	background-color: var(--social-main-color);
 	text-decoration: none;
+	text-align: center;
 	color: white;
-	min-height: 20px;
-	width: calc(var(--icon-size) + 20px);
+	min-height: 16px;
+	width: 75%;
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -70,11 +71,4 @@
 
 .link {
 	--social-main-color: rgb(0, 119, 181);
-}
-
-@media only screen and (max-width: 480px) {
-	.social div {
-		min-width: 99%;
-		max-width: 99%;
-	}
 }
