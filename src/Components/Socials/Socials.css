@@ -23,12 +23,16 @@
 	min-height: var(--social-size);
 	width: calc(var(--social-size) - 50px);
 	margin-top: 20px;
-	background: #181721;
-	border: 0.5px solid #6253e8;
-}
-
-.social div {
 	margin-right: 10px;
+	background: #181721;
+	border: solid;
+	border-image-slice: 1;
+	border-width: 1px;
+	border-image-source: linear-gradient(
+		60deg,
+		#6253e8,
+		var(--social-main-color)
+	);
 }
 
 .social div svg {
