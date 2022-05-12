@@ -17,13 +17,13 @@ const About = () => {
     <div className='about' id="about">
       <h2>Get To Know Me</h2>
       <div className="words">
-       <p>
-         My name is Favour, and I'm an {calculate_age()}-year-old full stack developer who loves to make life easier and more enjoyable by solving problems with code.
+        <p>
+          My name is Favour, and I'm an {calculate_age()}-year-old full stack developer who loves making life easier and more enjoyable by tackling problems with code.
         </p>
         <p>
-          My first step towards becoming a web developer was in high school(2019) but i could only learn HTML and CSS and after 2 weeks of learning it, i dropped it because i didn't know what to do next but I've always thought that creating websites and web applications would be fun, and really wanted to try it for myself.
+          My first step to becoming a web developer was in high school(2019). Although I was able to learn HTML and CSS, after two weeks of learning, I dropped out because I didn't know what to do next, but I had always thought that making web applications would be fun, and I really wanted to give it a shot.
         </p>
-        <p>In 2021, I picked it back and found out the types of web developers and choose to be a fullStack Developer</p>
+        <p>Having learned that there are different types of web developers in 2021 I chose to be a full stack developer, and I hope to do great things with my knowledge because being a developer is like having superpowers</p>
       </div>
     </div>
   )

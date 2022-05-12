@@ -22,6 +22,7 @@ h2 {
 	font-size: 1.6rem;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -43,5 +44,11 @@ h2 {
 	.App > div {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 418px) {
+	.dark:last-of-type {
+		font-size: 1.3rem;
 	}
 }

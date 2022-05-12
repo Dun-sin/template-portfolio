@@ -61,3 +61,9 @@
 		--input-width: 245px;
 	}
 }
+
+@media only screen and (max-width: 350px) {
+	:root {
+		--input-width: 200px;
+	}
+}
