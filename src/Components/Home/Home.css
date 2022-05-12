@@ -3,6 +3,7 @@
 }
 
 .home {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -14,11 +15,27 @@
 	font-size: 3rem;
 }
 
-.home-text h1 span {
+.home-text h1 span:first-of-type {
 	width: fit-content;
 	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
+}
+
+.home-text h1 span:nth-of-type(2) {
+	cursor: pointer;
+}
+
+.home-text h1 span:last-of-type {
+	display: inline-block;
+	position: absolute;
+	left: 38%;
+	top: 27%;
+	background: var(--gradient);
+	font-size: 1rem;
+	padding: 10px;
+	border-radius: 10px;
+	transform: rotate(-30deg);
 }
 
 .react-typewriter-text-wrap {
