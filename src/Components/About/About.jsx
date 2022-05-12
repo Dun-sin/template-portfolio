@@ -17,7 +17,8 @@ const About = () => {
     <div className='about' id="about">
       <h2>Get To Know Me</h2>
       <div className="words">
-        <p>My name is Favour, a girl in tech who does cool and awesome things and who loves to make life easier and fun with code. I'm an {calculate_age()} years old full stack developer
+       <p>
+         My name is Favour, and I'm an {calculate_age()}-year-old full stack developer who loves to make life easier and more enjoyable by solving problems with code.
         </p>
         <p>
           My first step towards becoming a web developer was in high school(2019) but i could only learn HTML and CSS and after 2 weeks of learning it, i dropped it because i didn't know what to do next but I've always thought that creating websites and web applications would be fun, and really wanted to try it for myself.
