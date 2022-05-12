@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 import './Nav.css'
 
-import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(true)
@@ -40,8 +40,7 @@ const Nav = () => {
         </div>
       </div>
       <div className='small' style={{
-        opacity: isOpen ? '0' : '1',
-        pointerEvents: 'none'
+        display: isOpen ? 'none' : 'flex'
       }}>
         {nav}
       </div>

@@ -1,5 +1,8 @@
 import './App.css';
 
+import { animateScroll } from 'react-scroll';
+import { Slide } from 'react-awesome-reveal';
+
 // components
 import Home from './Components/Home/Home';
 import Nav from './Components/NavBar/Nav';
@@ -10,7 +13,6 @@ import Mail from './Components/Mail/Mail';
 
 // icon
 import { CgArrowLongUp } from 'react-icons/cg';
-import { animateScroll } from 'react-scroll';
 
 function App() {
 	return (
@@ -20,18 +22,28 @@ function App() {
 				<Home />
 			</div>
 			<div className='dark'>
-				<Socials />
-				<About />
-				<Skills />
+				<Slide>
+					<Socials />
+				</Slide>
+				<Slide>
+					<About />
+				</Slide>
+				<Slide>
+					<Skills />
+				</Slide>
 			</div>
 			<div>
-				<Mail />
+				<Slide>
+					<Mail />
+				</Slide>
 			</div>
 			<div className='dark'>
-				<p>Thank you for scrolling!</p>
-				<div className='arrow' onClick={() => animateScroll.scrollToTop()}>
-					<CgArrowLongUp />
-				</div>
+				<Slide>
+					<p>Thank you for scrolling!</p>
+					<div className='arrow' onClick={() => animateScroll.scrollToTop()}>
+						<CgArrowLongUp />
+					</div>
+				</Slide>
 			</div>
 		</div>
 	);
