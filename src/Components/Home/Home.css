@@ -32,7 +32,8 @@
 	position: absolute;
 	left: 285px;
 	top: 155px;
-	background: var(--gradient);
+	background: transparent;
+	border: 1px solid #1da1f2;
 	font-size: 0.85rem;
 	width: 200px;
 	text-align: center;
