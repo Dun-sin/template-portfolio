@@ -50,10 +50,12 @@
 	text-decoration: none;
 	text-align: center;
 	color: white;
-	min-height: 16px;
+	max-height: calc(var(--social-size) / 12.5);
 	width: 75%;
 	padding: 10px;
 	border-radius: 10px;
+	font-size: calc(var(--social-size) / 16);
+	overflow: hidden;
 }
 
 .insta {
@@ -74,4 +76,10 @@
 
 .link {
 	--social-main-color: rgb(0, 119, 181);
+}
+
+@media only screen and (max-width: 386px) {
+	:root {
+		--social-size: 170px;
+	}
 }

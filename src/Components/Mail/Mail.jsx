@@ -18,29 +18,24 @@ const Mail = () => {
           </div>
           <div className='options'>
             <div>
-              <input type="radio" name="subject" value='Work' />
+              <input type="radio" name="subject" value='Work' id="work" />
               <label htmlFor="work">Work</label>
-              <div class="check"></div>
             </div>
             <div>
-              <input type="radio" name="subject" value="Collaboration" />
+              <input type="radio" name="subject" value="Collaboration" id="collaboration" />
               <label htmlFor="collaboration">Collaboration</label>
-              <div class="check"></div>
             </div>
             <div>
-              <input type="radio" name="subject" value="Chat" />
+              <input type="radio" name="subject" value="Chat" id='chat' />
               <label htmlFor="chat">Coffee Chat</label>
-              <div class="check"></div>
             </div>
             <div>
-              <input type="radio" name="subject" value="Other" />
-              <label htmlFor="other">Other</label>
-              <div class="check"></div>
+              <input type="text" name="subject" id='other' placeholder='Other' autoComplete='off' />
             </div>
           </div>
           <div>
             <label htmlFor="message">Message</label>
-            <textarea name="message" cols="30" rows="10"></textarea>
+            <textarea name="message" cols="30" rows="10" ></textarea>
           </div>
           <div className='btn'>Send Message</div>
         </div>
