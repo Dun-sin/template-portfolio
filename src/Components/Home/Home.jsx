@@ -25,8 +25,8 @@ const Home = () => {
       setTimeout(() => {
         textContent.current.style.display = 'none'
         animateScroll.scrollTo(350)
+        setNumber(1)
       }, 1000);
-      setNumber(0)
     }
   }
 
@@ -35,12 +35,18 @@ const Home = () => {
     <div className='home' id='home'>
       <div className="home-text">
         <h1>
-          <span>
+          <span className='gradientText'>
             Hi, I'm Favour!
           </span>
-          <span onClick={handleChange}>👋🏾</span>
+          <span>
+            <span onClick={handleChange}>
+              👋🏾
+            </span>
+            <span ref={textContent} style={{ display: 'none' }}>
+              Tap again
+            </span>
+          </span>
         </h1>
-        <span ref={textContent} style={{ display: 'none' }}>Tap again</span>
         <TypeWriterEffect
           cursorColor="#1da1f2"
           multiText={[

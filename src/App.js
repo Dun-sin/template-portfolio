@@ -22,7 +22,7 @@ function App() {
 				<Home />
 			</div>
 			<div className='dark'>
-				<Slide triggerOnce fraction='0.5'>
+				<Slide triggerOnce fraction='0.35'>
 					<Socials />
 				</Slide>
 				<Slide direction='right' triggerOnce fraction='0.5'>

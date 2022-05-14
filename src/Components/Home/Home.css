@@ -16,27 +16,29 @@
 	height: auto;
 }
 
-.home-text h1 span:first-of-type {
+.gradientText {
 	width: fit-content;
 	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
 }
 
-.home-text h1 span:last-of-type {
+.home-text h1 span:last-of-type span:first-of-type {
 	cursor: pointer;
 }
 
-.home-text > span {
+.home-text h1 span:last-of-type span:last-of-type {
 	display: inline-block;
 	position: absolute;
-	left: 280px;
-	top: 130px;
+	left: 285px;
+	top: 155px;
 	background: var(--gradient);
-	font-size: 1rem;
-	padding: 10px;
-	border-radius: 10px;
-	transform: rotate(-30deg);
+	font-size: 0.85rem;
+	width: 200px;
+	text-align: center;
+	border-radius: 5px;
+	transform: rotate(-20deg);
+	overflow: hidden;
 }
 
 .react-typewriter-text-wrap {
@@ -121,11 +123,17 @@
 
 @media only screen and (max-width: 600px) {
 	.home {
-		padding-top: 5rem;
+		padding-top: 10rem;
 	}
 
 	.home-text h1 {
 		font-size: 1.8rem;
+	}
+
+	.home-text h1 span:last-of-type span:last-of-type {
+		left: 200px;
+		top: 155px;
+		width: 200px;
 	}
 
 	.react-typewriter-text-wrap {
@@ -146,8 +154,11 @@
 	}
 }
 
-@media only screen and (max-width: 800px) {
-	.home {
-		padding-top: 10rem;
+@media only screen and (max-width: 500px) {
+	.home-text h1 span:last-of-type span:last-of-type {
+		top: 140px;
+		left: 63px;
+		width: 150px;
+		transform: rotate(20deg);
 	}
 }
