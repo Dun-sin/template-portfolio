@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 
 import Blob from './blob'
-
 import './Home.css'
 
 import TypeWriterEffect from 'react-typewriter-effect';
-import { useState, useRef } from 'react';
 import { animateScroll } from 'react-scroll';
+import { saveAs } from "file-saver";
+import { Link } from 'react-scroll';
 
 const Home = () => {
   const [number, setNumber] = useState(0);
   const arrayOfWords = ['Tap again', 'Helllo', 'You found this', 'I added this...', 'because it seemed cool', `so here's something`, 'did you know that...', `You can't breathe and talk.`, 'the earth is 71% water.', `It snows in the Sahara Desert
 `,]
   const textContent = useRef();
+  const handleDownload = () => {
+    saveAs(
+      "https://drive.google.com/uc?export=download&id=1_7cguS8cfrEchcaW6GsMTr6Y3ehknpYU",
+      "Favour's Resume.pdf"
+    )
+  }
 
   const handleChange = () => {
     textContent.current.style.display = 'inline-block';
@@ -59,8 +65,11 @@ const Home = () => {
           typeSpeed={35}
         />
         <div className="btns">
-          <a href='/' className='btn1'>Hire Me</a>
-          <a href='/' className='btn2'>View Resume</a>
+          <Link className='btn1' activeClass="active" to="mail" spy={true} smooth={true} offset={0} duration={500}>
+            Hire Me
+          </Link>
+
+          <div onClick={handleDownload} className='btn2'>View Resume</div>
         </div>
       </div>
       <div>

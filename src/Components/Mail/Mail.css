@@ -125,14 +125,20 @@
 	margin-top: 10px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 	:root {
-		--input-width: 245px;
+		--input-width: 97%;
 	}
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 531px) {
 	:root {
-		--input-width: 200px;
+		--input-width: 95%;
+	}
+}
+
+@media only screen and (max-width: 363px) {
+	:root {
+		--input-width: 92%;
 	}
 }
