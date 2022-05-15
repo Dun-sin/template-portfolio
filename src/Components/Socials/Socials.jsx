@@ -17,17 +17,17 @@ const Socials = () => {
         <div className='git'>
           <AiFillGithub />
           <p>Github</p>
-          <a href="https://www.instagram.com/dunsincodes" target='_blank' rel='noreferrer'>Let's Connect</a>
+          <a href="https://github.com/Dun-sin" target='_blank' rel='noreferrer'>Let's Connect</a>
         </div>
         <div className='twit'>
           <AiFillTwitterCircle />
           <p>Twitter</p>
-          <a href="/">Let's Connect</a>
+          <a href="https://twitter.com/Dunsin_codes" target='_blank' rel='noreferrer'>Let's Connect</a>
         </div>
         <div className='link'>
           <AiFillLinkedin />
           <p>Linkedin</p>
-          <a href="/">Let's Connect</a>
+          <a href="https://www.linkedin.com/in/favourfaiyetoleweb-developer/" target='_blank' rel='noreferrer'>Let's Connect</a>
         </div>
       </div>
     </div>
