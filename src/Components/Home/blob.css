@@ -37,7 +37,7 @@
 	}
 }
 
-@media only screen and (max-width: 944px) {
+@media only screen and (max-width: 1030px) {
 	.blob {
 		max-height: calc(var(--size) / 3);
 		width: calc(var(--size) / 3);
