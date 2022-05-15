@@ -15,7 +15,7 @@ const Home = () => {
   const textContent = useRef();
   const handleDownload = () => {
     saveAs(
-      "https://drive.google.com/uc?export=download&id=1_7cguS8cfrEchcaW6GsMTr6Y3ehknpYU",
+      "https://drive.google.com/uc?export=download&id=1xBlKFAZ0OK5zz64uyVJmhRlQozEd0Vuq",
       "Favour's Resume.pdf"
     )
   }
