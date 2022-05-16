@@ -23,7 +23,7 @@ const About = () => {
         <p>
           My first step to becoming a web developer was in high school(2019). Although I was able to learn HTML and CSS, after two weeks of learning, I dropped out because I didn't know what to do next, but I had always thought that making web applications would be fun, and I really wanted to give it a shot.
         </p>
-        <p>Having learned that there are different types of web developers in 2021 I chose to be a full stack developer, and I hope to do great things with my knowledge because being a developer is like having superpowers</p>
+        <p>Having learned that there are different types of web developers in 2021 I chose to be a full stack(MERN) developer, and I hope to do great things with my knowledge because being a developer is like having superpowers</p>
       </div>
     </div>
   )
