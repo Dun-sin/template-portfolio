@@ -19,8 +19,10 @@ const Mail = () => {
   const error = useRef()
 
   const validation = (email, name, message, subject) => {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-      valid.email = true;
+    const acceptedEmail = ['gmail.com', 'yahoo.com', 'outlook.com', 'protonmail.com', 'aol.com', 'icloud.com', 'me.com', 'mac.com', 'gmx.com', 'hey.com']
+    if (email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+      acceptedEmail.includes(email.split('@')[1]) ?
+        valid.email = true : valid.email = false
     } else {
       valid.email = false;
     }
@@ -46,7 +48,6 @@ const Mail = () => {
     const condition = Object.values(valid).every((value) => value === true)
     if (!condition) {
       error.current.style.display = 'block'
-      console.log(toSend.email, toSend.name, toSend.message, toSend.subject)
     } else {
       send("service_tb7yd1r", "template_fdn2vxd", {
         subject: toSend.subject,

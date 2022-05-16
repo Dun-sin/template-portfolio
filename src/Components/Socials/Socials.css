@@ -80,6 +80,6 @@
 
 @media only screen and (max-width: 386px) {
 	:root {
-		--social-size: 170px;
+		--social-size: 150px;
 	}
 }
