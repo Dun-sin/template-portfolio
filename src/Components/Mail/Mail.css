@@ -64,6 +64,10 @@
 	overflow: hidden;
 }
 
+[type='radio'] {
+	padding-top: 5px;
+}
+
 [type='radio']:checked,
 [type='radio']:not(:checked) {
 	position: absolute;
