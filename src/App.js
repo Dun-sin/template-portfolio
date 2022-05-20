@@ -25,7 +25,7 @@ function App() {
 				<Slide triggerOnce fraction='0.35'>
 					<Socials />
 				</Slide>
-				<Slide direction='right' triggerOnce fraction='0.5'>
+				<Slide direction='right' triggerOnce fraction='0.3'>
 					<About />
 				</Slide>
 				<Slide triggerOnce fraction='0.5'>
