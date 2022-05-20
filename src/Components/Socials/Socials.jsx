@@ -27,7 +27,7 @@ const Socials = () => {
         <div className='link'>
           <AiFillLinkedin />
           <p>Linkedin</p>
-          <a href="https://www.linkedin.com/in/favour-faiyetole/" target='_blank' rel='noreferrer'>Let's Connect</a>
+          <a href="https://www.linkedin.com/in/favour-faiyetole" target='_blank' rel='noreferrer'>Let's Connect</a>
         </div>
       </div>
     </div>
