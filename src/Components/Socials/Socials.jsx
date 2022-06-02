@@ -22,7 +22,7 @@ const Socials = () => {
         <div className='twit'>
           <AiFillTwitterCircle />
           <p>Twitter</p>
-          <a href="https://twitter.com/Dunsin_Codes2" target='_blank' rel='noreferrer'>Let's Connect</a>
+          <a href="https://twitter.com/DunsinWebDev" target='_blank' rel='noreferrer'>Let's Connect</a>
         </div>
         <div className='link'>
           <AiFillLinkedin />
