@@ -27,10 +27,11 @@ const Mail = () => {
       valid.email = false;
     }
 
-    if (name === '' && message === '' && subject === '' && message.length < 100) {
-      valid.rest = false;
-    } else {
+    if (name !== '' && subject !== '' && message.length > 100) {
       valid.rest = true;
+      console.log('here')
+    } else {
+      valid.rest = false;
     }
   }
 
