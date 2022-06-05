@@ -27,7 +27,7 @@ const Mail = () => {
       valid.email = false;
     }
 
-    if (name === '' && message === '' && subject === '') {
+    if (name === '' && message === '' && subject === '' && message.length < 100) {
       valid.rest = false;
     } else {
       valid.rest = true;
