@@ -57,7 +57,7 @@ const Home = () => {
           cursorColor="#1da1f2"
           multiText={[
             'FullStack Developer',
-            'Making Your Website beautifully',
+            'Making Your Product Wonderfully',
             'Follow My Instagram'
           ]}
           multiTextLoop={true}
