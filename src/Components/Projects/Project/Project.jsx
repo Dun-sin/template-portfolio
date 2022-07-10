@@ -10,9 +10,10 @@ const Project = ({info}) => {
           {info.techs.map(item => <div key={item}>{item}</div>)}
         </div>
         <div className="btns">
-          <a href={info.liveLink}>Live</a>
-          <a href={info.githubLink} >Github</a>
+          <a href={info.liveLink} target="_blank">Live</a>
+          <a href={info.githubLink} target="_blank">Github</a>
       </div>
+      {info.isOpenSource && <div className="open">Open Source</div>}
     </div>
   )
 }
