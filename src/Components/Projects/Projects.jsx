@@ -14,7 +14,7 @@ const Projects = () => {
     },
     trick: {
       name: 'Trick Generator',
-      desc: 'A website to help you get simple tricks you can use in your applications with html and css',
+      desc: 'A website to help you get simple tricks you can use in your applications',
       liveLink: 'http://trick-generator.vercel.app/',
       githubLink: 'https://github.com/Dun-sin/trick-generator',
       techs: ['HTML', 'CSS', 'TypeScript'],
@@ -23,8 +23,11 @@ const Projects = () => {
   }
   return (
     <div className="Projects">
-      <Project info={projectsInfo.anon} />
-      <Project info={projectsInfo.trick} />
+      <h2>My Projects</h2>
+      <div>
+        <Project info={projectsInfo.anon} />
+        <Project info={projectsInfo.trick} />
+      </div>
     </div>
   )
 }
