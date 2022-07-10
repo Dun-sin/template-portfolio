@@ -1,16 +1,16 @@
 :root {
-  --project-width: 300px;
+  --project-width: 250px;
   --border-radius: 10px;
 }
 
 .project {
   background: rgb(34,33,52);
-  width: var(--project-width);
+  min-width: var(--project-width);
+  max-width: var(--project-width);
   border-radius: var(--border-radius);
-}
-
-.project {
-  padding: 0 .5rem 0 .5rem;
+  padding: 1.5rem;
+  margin-right: 2rem;
+  position: relative;
 }
 
 .project > p {
@@ -19,15 +19,17 @@
 
 .project .tech-stack {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .project .tech-stack div {
-  height: 30px;
-  width: 100px;
-  padding: .5rem;
-  margin-bottom: .5rem;
+  min-height: 20px;
+  min-width: 60px;
+  max-height: 20px;
+  max-width: 60px;
+  font-size: .6rem;
+  padding: .4rem;
+  margin: 0 .5rem .5rem 0;
   display: grid;
   place-items: center;
   background: rgb(25,23,32);
@@ -37,11 +39,14 @@
 .project .btns {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project .btns a {
-  height: 30px;
-  width: 100px;
+  min-height: 30px;
+  min-width: 100px;
+    max-height: 30px;
+  max-width: 100px;
   background: rgb(245,242,245);
   color: rgb(34,33,52);
   text-decoration: none;
@@ -50,4 +55,17 @@
   display: grid;
   place-items: center;
   margin-bottom: 1rem;
+}
+
+.open {
+  background:rgb(245,242,245);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  color: rgb(34,33,52);
+  display: grid;
+  place-items: center;  
+  top: 0;
+  left: 110%;
 }
