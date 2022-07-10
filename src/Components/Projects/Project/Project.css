@@ -1,0 +1,53 @@
+:root {
+  --project-width: 300px;
+  --border-radius: 10px;
+}
+
+.project {
+  background: rgb(34,33,52);
+  width: var(--project-width);
+  border-radius: var(--border-radius);
+}
+
+.project {
+  padding: 0 .5rem 0 .5rem;
+}
+
+.project > p {
+  margin-top: -1.2rem;
+}
+
+.project .tech-stack {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project .tech-stack div {
+  height: 30px;
+  width: 100px;
+  padding: .5rem;
+  margin-bottom: .5rem;
+  display: grid;
+  place-items: center;
+  background: rgb(25,23,32);
+  border-radius: var(--border-radius);
+}
+
+.project .btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project .btns a {
+  height: 30px;
+  width: 100px;
+  background: rgb(245,242,245);
+  color: rgb(34,33,52);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from './Project/Project.jsx';
+import './Projects.css';
 
 const Projects = () => {
   const projectsInfo = {
@@ -9,8 +10,6 @@ const Projects = () => {
       liveLink: 'https://anon-chat-app.vercel.app/',
       githubLink: 'https://github.com/Dun-sin/anon-chat-app',
       techs: ['React', 'Node', 'MongoDB', 'Socket.io', 'Redux'],
-      image: 'https://user-images.githubusercontent.com/78784850/178144332-053729f8-ee55-49fa-8f56-dc5203a687d0.png',
-      isBuilding: true,
       isOpenSource: true
     },
     trick: {
@@ -19,13 +18,11 @@ const Projects = () => {
       liveLink: 'http://trick-generator.vercel.app/',
       githubLink: 'https://github.com/Dun-sin/trick-generator',
       techs: ['HTML', 'CSS', 'TypeScript'],
-      image: 'https://user-images.githubusercontent.com/78784850/178144316-d09aae2b-b809-4f33-a9e5-f437ceeb905d.png',
-      isBuilding: true,
       isOpenSoure: true
     }
   }
   return (
-    <div>
+    <div className="Projects">
       <Project info={projectsInfo.anon} />
       <Project info={projectsInfo.trick} />
     </div>

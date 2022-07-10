@@ -1,0 +1,9 @@
+.Projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Projects > div {
+  margin: -.5rem 0 2rem 2rem;
+}
