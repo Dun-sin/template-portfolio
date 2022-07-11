@@ -23,7 +23,7 @@ function App() {
         <Home />
       </div>
       <div className='dark'>
-        <Slide direction='right' triggerOnce fraction='0.35'>
+        <Slide direction='right' triggerOnce fraction='0.1'>
           <Projects />
         </Slide>
         <Slide triggerOnce fraction='0.35'>
