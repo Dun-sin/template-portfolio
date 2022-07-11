@@ -69,7 +69,7 @@
   display: grid;
   place-items: center;  
   top: 0;
-  left: 238px;
+  left: calc(var(--project-width) / 1.05042016807);
   font-size: .6rem;
 }
 
