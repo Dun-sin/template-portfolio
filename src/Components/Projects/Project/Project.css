@@ -43,10 +43,10 @@
 }
 
 .project .btns a {
-  min-height: calc(var(--project-width) - 220);
-  min-width: calc(var(--project-width) - 150);
-    max-height: calc(var(--project-width) - 220);
-  max-width: calc(var(--project-width) - 150);
+  min-height: calc(var(--project-width) / 8.3);
+  min-width: calc(var(--project-width) / 2.5);
+    max-height: calc(var(--project-width) / 8.3);
+  max-width: calc(var(--project-width) / 2.5);
   background: rgb(245,242,245);
   color: rgb(34,33,52);
   text-decoration: none;
