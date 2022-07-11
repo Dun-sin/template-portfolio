@@ -78,6 +78,6 @@
 @media screen and (max-width: 430px){
   :root {
     --project-width: 200px;
-    --blob-left: 188px;
+    --blob-left: 200px;
   }
 }
