@@ -15,7 +15,9 @@ const Nav = () => {
 
   const nav =
     <ul style={{ pointerEvents: 'auto' }}>
-      {/* <li>Projects</li> */}
+      <li><Link onClick={handleClick} activeClass="active" to="projects" spy={true} smooth={true} offset={-80} duration={500}>
+        Projects
+      </Link></li>
       <li><Link onClick={handleClick} activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}>
         About
       </Link></li>
