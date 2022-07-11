@@ -1,6 +1,7 @@
 :root {
   --project-width: 250px;
   --border-radius: 10px;
+  --blob-left: 238px;
 }
 
 .project {
@@ -69,13 +70,14 @@
   display: grid;
   place-items: center;  
   top: 0;
-  left: calc(var(--project-width) / 1.05042016807);
+  left: var(--blob-left);
   font-size: calc(var(--project-width) / 26);
   text-align: center;
 }
 
 @media screen and (max-width: 430px){
   :root {
-  --project-width: 200px;
+    --project-width: 200px;
+    --blob-left: 188px;
   }
 }
