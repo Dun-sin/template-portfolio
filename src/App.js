@@ -26,23 +26,23 @@ function App() {
         <Slide direction='right' triggerOnce fraction='0.1'>
           <Projects />
         </Slide>
-        <Slide triggerOnce fraction='0.35'>
+        <Slide triggerOnce>
           <Socials />
         </Slide>
-        <Slide direction='right' triggerOnce fraction='0.3'>
+        <Slide direction='right' triggerOnce>
           <About />
         </Slide>
-        <Slide triggerOnce fraction='0.5'>
+        <Slide triggerOnce >
           <Skills />
         </Slide>
       </div>
       <div>
-        <Slide direction='right' triggerOnce fraction='0.5'>
+        <Slide direction='right' triggerOnce>
           <Mail />
         </Slide>
       </div>
       <div className='dark'>
-        <Slide triggerOnce fraction='0.5'>
+        <Slide triggerOnce>
           <p>Thank you for scrolling!</p>
           <div className='arrow' onClick={() => animateScroll.scrollToTop()}>
             <CgArrowLongUp />
