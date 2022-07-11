@@ -59,13 +59,17 @@
 
 .open {
   background:rgb(245,242,245);
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+  min-height: 60px;
+  min-width: 60px;
+  max-height: 60px;
+  max-width: 60px;
+  border-radius: 50% 10px 50% 50%;
   position: absolute;
   color: rgb(34,33,52);
   display: grid;
   place-items: center;  
   top: 0;
-  left: 100%;
+  left: 238px;
+  font-size: .6rem;
 }
+
