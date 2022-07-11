@@ -59,10 +59,10 @@
 
 .open {
   background:rgb(245,242,245);
-  min-height: 60px;
-  min-width: 60px;
-  max-height: 60px;
-  max-width: 60px;
+  min-height: calc(var(--project-width) / 4.1);
+  min-width: calc(var(--project-width) / 4.1);
+  max-height: calc(var(--project-width) / 4.1);
+  max-width: calc(var(--project-width) / 4.1);
   border-radius: 50% 10px 50% 50%;
   position: absolute;
   color: rgb(34,33,52);
@@ -70,7 +70,8 @@
   place-items: center;  
   top: 0;
   left: calc(var(--project-width) / 1.05042016807);
-  font-size: .6rem;
+  font-size: calc(var(--project-width) / 26);
+  text-align: center;
 }
 
 @media screen and (max-width: 430px){
