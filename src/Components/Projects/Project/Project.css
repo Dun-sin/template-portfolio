@@ -43,10 +43,10 @@
 }
 
 .project .btns a {
-  min-height: 30px;
-  min-width: 100px;
-    max-height: 30px;
-  max-width: 100px;
+  min-height: calc(var(--project-width) - 220px);
+  min-width: calc(var(--project-width) - 150px);
+    max-height: calc(var(--project-width) - 220px);
+  max-width: calc(var(--project-width) - 150px);
   background: rgb(245,242,245);
   color: rgb(34,33,52);
   text-decoration: none;
@@ -73,3 +73,8 @@
   font-size: .6rem;
 }
 
+@media screen and (max-width: 430px){
+  :root {
+  --project-width: 200px;
+  }
+}
