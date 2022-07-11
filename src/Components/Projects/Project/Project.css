@@ -9,7 +9,7 @@
   max-width: var(--project-width);
   border-radius: var(--border-radius);
   padding: 1.5rem;
-  margin-right: 2rem;
+  margin: 0 2rem 2rem 0;
   position: relative;
 }
 
