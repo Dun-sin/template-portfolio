@@ -18,7 +18,7 @@ const Projects = () => {
       liveLink: 'http://trick-generator.vercel.app/',
       githubLink: 'https://github.com/Dun-sin/trick-generator',
       techs: ['HTML', 'CSS', 'TypeScript'],
-      isOpenSoure: true
+      isOpenSource: true
     }
   }
   return (
