@@ -80,4 +80,8 @@
     --project-width: 200px;
     --blob-left: 200px;
   }
+  
+  .Project {
+    margin: 0 0 2rem 0;
+  }
 }
