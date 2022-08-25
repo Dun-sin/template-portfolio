@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react'
 
 import '../styles/Home.css'
-import me from '../assets/profile-pic.png'
 
 import TypeWriterEffect from 'react-typewriter-effect';
 import { animateScroll } from 'react-scroll';
