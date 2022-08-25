@@ -33,7 +33,7 @@
 
 .skill div svg {
 	min-height: calc(var(--skill-size) - 40px);
-	width: calc(var(--skill-size)- 40px);
+	width: calc(var(--skill-size) - 40px);
 	color: var(--skill-color);
 	transition: all 390ms ease-in-out;
 	margin-bottom: -5px;
