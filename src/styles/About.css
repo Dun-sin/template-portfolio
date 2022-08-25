@@ -1,0 +1,12 @@
+.about {
+	padding-bottom: 50px;
+}
+
+.about .words p {
+	font-size: calc(1vw + 0.7rem);
+	font-weight: 350;
+}
+
+.words {
+	margin-top: -20px;
+}

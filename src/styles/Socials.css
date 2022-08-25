@@ -1,0 +1,85 @@
+:root {
+	--social-main-color: white;
+	--social-size: 200px;
+	--icon-size: calc(var(--social-size) / 3.75);
+}
+
+.socials {
+	padding-bottom: 50px;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.social div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: var(--social-size);
+	width: calc(var(--social-size) - 50px);
+	margin-top: 20px;
+	background: #181721;
+	border: solid;
+	border-image-slice: 1;
+	border-width: 1px;
+	border-image-source: linear-gradient(
+		60deg,
+		#6253e8,
+		var(--social-main-color)
+	);
+}
+
+.social div svg {
+	min-height: var(--icon-size);
+	width: var(--icon-size);
+	color: var(--social-main-color);
+}
+
+.social div p {
+	font-size: 1rem;
+	font-weight: 200;
+}
+
+.social div a {
+	background-color: var(--social-main-color);
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	max-height: calc(var(--social-size) / 12.5);
+	width: 75%;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: calc(var(--social-size) / 16);
+	overflow: hidden;
+}
+
+.insta {
+	--social-main-color: rgb(193, 53, 132);
+}
+
+.git {
+	--social-main-color: rgb(255, 255, 255);
+}
+
+.git a {
+	color: black !important;
+}
+
+.twit {
+	--social-main-color: rgb(29, 161, 242);
+}
+
+.link {
+	--social-main-color: rgb(0, 119, 181);
+}
+
+@media only screen and (max-width: 386px) {
+	:root {
+		--social-size: 180px;
+	}
+}

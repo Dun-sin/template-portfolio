@@ -1,0 +1,87 @@
+:root {
+	--project-width: 250px;
+	--border-radius: 10px;
+	--blob-left: 238px;
+}
+
+.project {
+	background: rgb(34, 33, 52);
+	min-width: var(--project-width);
+	max-width: var(--project-width);
+	border-radius: var(--border-radius);
+	padding: 1.5rem;
+	margin: 0 2rem 2rem 0;
+	position: relative;
+}
+
+.project > p {
+	margin-top: -1.2rem;
+}
+
+.project .tech-stack {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project .tech-stack div {
+	min-height: 20px;
+	min-width: 60px;
+	max-height: 20px;
+	max-width: 60px;
+	font-size: 0.6rem;
+	padding: 0.4rem;
+	margin: 0 0.5rem 0.25rem 0;
+	display: grid;
+	place-items: center;
+	background: rgb(25, 23, 32);
+	border-radius: var(--border-radius);
+}
+
+.project .btns {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.project .btns a {
+	min-height: calc(var(--project-width) / 8.3);
+	min-width: calc(var(--project-width) / 2.5);
+	max-height: calc(var(--project-width) / 8.3);
+	max-width: calc(var(--project-width) / 2.5);
+	background: rgb(245, 242, 245);
+	color: rgb(34, 33, 52);
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: var(--border-radius);
+	display: grid;
+	place-items: center;
+	margin-bottom: 1rem;
+}
+
+.open {
+	background: rgb(245, 242, 245);
+	min-height: calc(var(--project-width) / 4.1);
+	min-width: calc(var(--project-width) / 4.1);
+	max-height: calc(var(--project-width) / 4.1);
+	max-width: calc(var(--project-width) / 4.1);
+	border-radius: 50% 10px 50% 50%;
+	position: absolute;
+	color: rgb(34, 33, 52);
+	display: grid;
+	place-items: center;
+	top: 0;
+	left: var(--blob-left);
+	font-size: calc(var(--project-width) / 26);
+	text-align: center;
+}
+
+@media screen and (max-width: 430px) {
+	:root {
+		--project-width: 200px;
+		--blob-left: 200px;
+	}
+
+	.project {
+		margin: 0 0 2rem 0;
+	}
+}

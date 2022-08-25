@@ -1,0 +1,28 @@
+{
+	"name": "portfolio-v2",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"emailjs-com": "^3.2.0",
+		"file-saver": "^2.0.5",
+		"react": "^18.2.0",
+		"react-awesome-reveal": "^4.0.0",
+		"react-dom": "^18.2.0",
+		"react-icons": "^4.4.0",
+		"react-scripts": "5.0.1",
+		"react-scroll": "^1.8.7",
+		"react-typewriter-effect": "^1.1.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.17",
+		"@types/react-dom": "^18.0.6",
+		"@vitejs/plugin-react": "^2.0.1",
+		"vite": "^3.0.7"
+	}
+}

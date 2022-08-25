@@ -1,0 +1,148 @@
+:root {
+	--input-width: 400px;
+}
+
+.mail {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.entry input,
+.entry textarea {
+	background-color: #181721;
+	width: var(--input-width);
+	border: 1px solid #6253e8;
+	border-radius: 4px;
+	caret-color: #6253e8;
+	padding-left: 10px;
+	color: #f5f5f5;
+}
+
+.entry input:active,
+.entry textarea:active,
+.entry input:focus,
+.entry textarea:focus {
+	outline: none;
+	background-color: #181721;
+}
+
+.entry input {
+	min-height: 40px;
+}
+
+.entry textarea {
+	padding-top: 10px;
+	resize: none;
+}
+
+.entry > div:not(.btn, .options) {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.entry > div:not(.btn) label {
+	margin-bottom: 5px;
+}
+
+.options {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: var(--input-width);
+}
+
+.options div {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 10px;
+}
+
+.options div label {
+	overflow: hidden;
+}
+
+[type='radio'] {
+	padding-top: 5px;
+}
+
+[type='radio']:checked,
+[type='radio']:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+[type='radio']:checked + label,
+[type='radio']:not(:checked) + label {
+	position: relative;
+	padding-left: 28px;
+	cursor: pointer;
+	line-height: 20px;
+	display: inline-block;
+	color: #666;
+}
+[type='radio']:checked + label:before,
+[type='radio']:not(:checked) + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #ddd;
+	border-radius: 100%;
+	background: transparent;
+}
+[type='radio']:checked + label:after,
+[type='radio']:not(:checked) + label:after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	background: #6253e8;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border-radius: 100%;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+[type='radio']:not(:checked) + label:after {
+	opacity: 0;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+[type='radio']:checked + label:after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.btn {
+	cursor: pointer;
+	background-color: #6253e8;
+	width: calc(calc(var(--input-width) / 2) + 20px);
+	min-height: 35px;
+	display: grid;
+	place-items: center;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	:root {
+		--input-width: 97%;
+	}
+}
+
+@media only screen and (max-width: 531px) {
+	:root {
+		--input-width: 95%;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	:root {
+		--input-width: 94%;
+	}
+}

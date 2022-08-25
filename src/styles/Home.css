@@ -1,0 +1,174 @@
+:root {
+	--gradient: linear-gradient(to bottom right, #1da1f2, #6253e8);
+}
+
+.home {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 10rem;
+	padding-bottom: 40px;
+	position: relative;
+}
+
+.home-text h1 {
+	font-size: calc(1vw + 3rem);
+	height: auto;
+}
+
+.gradientText {
+	width: fit-content;
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+}
+
+.home-text h1 span:last-of-type span:first-of-type {
+	cursor: pointer;
+}
+
+.home-text h1 span:last-of-type span:last-of-type {
+	display: inline-block;
+	position: absolute;
+	left: 345px;
+	top: 180px;
+	background: transparent;
+	border: 1px solid #1da1f2;
+	font-size: calc(1vw + 0.85rem);
+	width: 200px;
+	text-align: center;
+	border-radius: 5px;
+	transform: rotate(-20deg);
+	overflow: hidden;
+}
+
+.react-typewriter-text-wrap {
+	margin-top: -3rem;
+}
+
+.home-text .react-typewriter-text {
+	overflow: hidden;
+	font-size: calc(1vw + 1.7rem);
+	font-weight: 300;
+}
+
+.btns {
+	margin-top: 0.5rem;
+	display: flex;
+}
+
+.btn1,
+.btn2 {
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+	font-weight: 300;
+	text-decoration: none;
+	display: grid;
+	place-items: center;
+}
+
+.btn1 {
+	min-height: 35px;
+	width: 120px;
+	background: var(--gradient);
+	margin-right: 10px;
+}
+
+.btn2 {
+	width: 150px;
+	border: double 2px transparent;
+	background-image: linear-gradient(#232135, #232135),
+		radial-gradient(circle at top left, #1da1f2, #6253e8);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+}
+
+@media only screen and (max-width: 1040px) and (min-width: 899px) {
+	.home {
+		padding-top: 8rem;
+	}
+
+	.home-text h1 span:last-of-type span:last-of-type {
+		left: 230px;
+		top: 140px;
+		width: 200px;
+	}
+
+	.react-typewriter-text-wrap {
+		margin-top: -1.5rem;
+	}
+}
+
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+	.home {
+		padding-top: 8rem;
+	}
+
+	.home-text h1 span:last-of-type span:last-of-type {
+		left: 250px;
+		top: 145px;
+		width: 200px;
+	}
+
+	.react-typewriter-text-wrap {
+		margin-top: -1.5rem;
+	}
+
+	.home-text .react-typewriter-text {
+		line-height: 1.6rem;
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+	.home {
+		padding-top: 8rem;
+	}
+
+	.home-text h1 span:last-of-type span:last-of-type {
+		left: 280px;
+		top: 145px;
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.home {
+		padding-top: 10rem;
+	}
+
+	.home-text h1 span:last-of-type span:last-of-type {
+		left: 200px;
+		top: 155px;
+		width: 200px;
+	}
+
+	.home-text h1 {
+		font-size: calc(1vw + 1.6rem);
+	}
+
+	.home-text .react-typewriter-text {
+		font-size: calc(1vw + 1rem);
+	}
+
+	.react-typewriter-text-wrap {
+		margin-top: -01.5rem;
+	}
+
+	.btn1 {
+		width: 90px;
+	}
+
+	.btn2 {
+		width: 120px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.home-text h1 span:last-of-type span:last-of-type {
+		top: 140px;
+		left: 63px;
+		width: 150px;
+		transform: rotate(20deg);
+	}
+}

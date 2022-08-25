@@ -1,0 +1,53 @@
+.App > div {
+	padding-left: 10rem;
+	padding-right: 10rem;
+}
+
+.dark {
+	box-shadow: 30px 20px 5px #232135;
+	background-color: #181721;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+h2 {
+	font-size: calc(1vw + 1rem);
+	font-weight: 500;
+}
+
+.dark:last-of-type {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: calc(1vw + 1.1rem);
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.arrow {
+	background-color: #232135;
+	height: 60px;
+	width: 60px;
+	border-radius: 10px;
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
+
+.arrow svg {
+	color: #6253e8;
+}
+
+@media only screen and (max-width: 800px) {
+	.App > div {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 418px) {
+	.dark:last-of-type {
+		font-size: calc(1vw + 0.8rem);
+	}
+}

@@ -1,0 +1,82 @@
+:root {
+	--skill-color: black;
+	--container-width: 600px;
+	--skill-size: calc(var(--container-width) / 5);
+}
+
+.skills {
+	width: var(--container-width);
+}
+
+.skill {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.skill div {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	min-height: var(--skill-size);
+	width: var(--skill-size);
+	background-color: #ffffffe6;
+	display: grid;
+	place-items: center;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+.skill p {
+	color: var(--skill-color);
+	font-weight: 600;
+	margin-bottom: -2px;
+}
+
+.skill div svg {
+	min-height: calc(var(--skill-size) - 40px);
+	width: calc(var(--skill-size)- 40px);
+	color: var(--skill-color);
+	transition: all 390ms ease-in-out;
+	margin-bottom: -5px;
+}
+
+.js:hover {
+	--skill-color: #fddd00;
+}
+.html:hover {
+	--skill-color: #f1662a;
+}
+.css:hover,
+.ts:hover {
+	--skill-color: #1572b6;
+}
+.react:hover {
+	--skill-color: #00d8ff;
+}
+.node:hover {
+	--skill-color: #539e43;
+}
+.fig:hover {
+	--skill-color: #a259ff;
+}
+.mon:hover {
+	--skill-color: #41a247;
+}
+.fire:hover {
+	--skill-color: #eeab37;
+}
+
+@media only screen and (max-width: 600px) {
+	:root {
+		--container-width: 500px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	:root {
+		--container-width: 380px;
+	}
+}
+@media only screen and (max-width: 350px) {
+	:root {
+		--container-width: 300px;
+	}
+}
