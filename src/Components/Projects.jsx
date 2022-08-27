@@ -4,6 +4,14 @@ import '../styles/Projects.css';
 
 const Projects = () => {
   const projectsInfo = {
+    smart: {
+      name: 'Smart Search',
+      desc: 'Find the best smartphone for you',
+      liveLink: 'https://smartsearch-production.up.railway.app',
+      githubLink: 'https://github.com/Dun-sin/smartsearch',
+      techs: ['Next', 'API', 'Puppeteer'],
+      isOpenSource: true
+    },
     anon: {
       name: 'AnonChat App',
       desc: 'An app to help you chat in secret',
@@ -25,6 +33,7 @@ const Projects = () => {
     <div className="Projects" id="projects" >
       <h2>My Projects</h2>
       <div>
+        <Project info={projectsInfo.smart} />
         <Project info={projectsInfo.anon} />
         <Project info={projectsInfo.trick} />
       </div>
