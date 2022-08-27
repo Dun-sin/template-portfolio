@@ -5,7 +5,7 @@ import '../styles/Projects.css';
 const Projects = () => {
   const projectsInfo = {
     smart: {
-      name: 'Smart <br />Search',
+      name: 'Smart Search',
       desc: 'Find the best smartphone for you',
       liveLink: 'https://smartsearch-production.up.railway.app',
       githubLink: 'https://github.com/Dun-sin/smartsearch',
@@ -13,7 +13,7 @@ const Projects = () => {
       isOpenSource: true
     },
     anon: {
-      name: 'AnonChat <br />App',
+      name: 'AnonChat App',
       desc: 'An app to help you chat in secret',
       liveLink: 'https://anon-chat-app.vercel.app/',
       githubLink: 'https://github.com/Dun-sin/anon-chat-app',
