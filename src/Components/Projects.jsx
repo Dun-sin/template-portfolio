@@ -12,20 +12,20 @@ const Projects = () => {
       techs: ['Next', 'API', 'Puppeteer'],
       isOpenSource: true
     },
-    anon: {
-      name: 'AnonChat App',
-      desc: 'An app to help you chat in secret',
-      liveLink: 'https://anon-chat-app.vercel.app/',
-      githubLink: 'https://github.com/Dun-sin/anon-chat-app',
-      techs: ['React', 'Node', 'MongoDB', 'Socket.io', 'Redux'],
-      isOpenSource: true
-    },
     trick: {
       name: 'Trick Generator',
       desc: 'A website to help you get simple tricks you can use in your applications',
       liveLink: 'http://trick-generator.vercel.app/',
       githubLink: 'https://github.com/Dun-sin/trick-generator',
       techs: ['HTML', 'CSS', 'TypeScript'],
+      isOpenSource: true
+    },
+    anon: {
+      name: 'AnonChat App',
+      desc: 'An app to help you chat in secret',
+      liveLink: 'https://anon-chat-app.vercel.app/',
+      githubLink: 'https://github.com/Dun-sin/anon-chat-app',
+      techs: ['React', 'Node', 'MongoDB', 'Socket.io', 'Redux'],
       isOpenSource: true
     }
   }
@@ -34,8 +34,8 @@ const Projects = () => {
       <h2>My Projects</h2>
       <div>
         <Project info={projectsInfo.smart} />
-        <Project info={projectsInfo.anon} />
         <Project info={projectsInfo.trick} />
+        <Project info={projectsInfo.anon} />
       </div>
     </div>
   )
