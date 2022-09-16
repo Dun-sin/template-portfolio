@@ -13,18 +13,18 @@ const Projects = () => {
       isOpenSource: true
     },
     trick: {
-      name: 'Trick Generator',
+      name: 'Code Magic',
       desc: 'A website to help you get simple tricks you can use in your applications',
-      liveLink: 'http://trick-generator.vercel.app/',
-      githubLink: 'https://github.com/Dun-sin/trick-generator',
+      liveLink: 'http://code-magic.vercel.app/',
+      githubLink: 'https://github.com/Dun-sin/code-magic',
       techs: ['HTML', 'CSS', 'TypeScript'],
       isOpenSource: true
     },
     anon: {
-      name: 'AnonChat App',
+      name: 'Whisper',
       desc: 'An app to help you chat in secret',
-      liveLink: 'https://anon-chat-app.vercel.app/',
-      githubLink: 'https://github.com/Dun-sin/anon-chat-app',
+      liveLink: 'https://whischat.vercel.app/',
+      githubLink: 'https://github.com/Dun-sin/whisper',
       techs: ['React', 'Node', 'MongoDB', 'Socket.io', 'Redux'],
       isOpenSource: true
     }
