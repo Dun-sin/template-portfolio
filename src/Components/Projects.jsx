@@ -4,14 +4,6 @@ import '../styles/Projects.css';
 
 const Projects = () => {
   const projectsInfo = {
-    smart: {
-      name: 'Smart Search',
-      desc: 'Find the best smartphone for you',
-      liveLink: 'https://smartsearch-production.up.railway.app',
-      githubLink: 'https://github.com/Dun-sin/smartsearch',
-      techs: ['Next', 'API', 'Puppeteer'],
-      isOpenSource: true
-    },
     trick: {
       name: 'Code Magic',
       desc: 'A website to help you get simple tricks you can use in your applications',
