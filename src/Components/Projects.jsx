@@ -25,7 +25,6 @@ const Projects = () => {
     <div className="Projects" id="projects" >
       <h2>My Projects</h2>
       <div>
-        <Project info={projectsInfo.smart} />
         <Project info={projectsInfo.trick} />
         <Project info={projectsInfo.anon} />
       </div>
