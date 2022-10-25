@@ -4,7 +4,7 @@ import '../styles/Projects.css';
 
 const Projects = () => {
   const projectsInfo = {
-    trick: {
+    one: {
       name: 'Project 1',
       desc: 'congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed',
       liveLink: 'website url',
@@ -12,8 +12,8 @@ const Projects = () => {
       techs: ['HTML', 'CSS', 'TypeScript'],
       isOpenSource: true
     },
-    anon: {
-      name: 'Whisper',
+    two: {
+      name: 'Project 2',
       desc: 'congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed',
       liveLink: 'website url',
       githubLink: 'https://github.com/',
@@ -25,8 +25,8 @@ const Projects = () => {
     <div className="Projects" id="projects" >
       <h2>My Projects</h2>
       <div>
-        <Project info={projectsInfo.trick} />
-        <Project info={projectsInfo.anon} />
+        <Project info={projectsInfo.one} />
+        <Project info={projectsInfo.two} />
       </div>
     </div>
   )
