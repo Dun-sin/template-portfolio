@@ -50,12 +50,14 @@ const Mail = () => {
     if (!condition) {
       error.current.style.display = 'block'
     } else {
-      send("service_tb7yd1r", "template_fdn2vxd", {
-        subject: toSend.subject,
-        name: toSend.name,
-        email: toSend.email,
-        message: toSend.message,
-      }, '1_usoNb-IA1Q70Ry5');
+//       Using email.js to send emails https://www.emailjs.com/docs/sdk/installation/
+//       use .env to store ids and keys from email.js
+//       send(serviceID, templateID, {
+//         subject: toSend.subject,
+//         name: toSend.name,
+//         email: toSend.email,
+//         message: toSend.message,
+//       }, publicKey);
       error.current.style.display = 'none'
       reset();
     }
