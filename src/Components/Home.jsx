@@ -14,8 +14,8 @@ const Home = () => {
   const textContent = useRef();
   const handleDownload = () => {
     saveAs(
-      "https://drive.google.com/uc?export=download&id=1IkAyH2uQ7U8Ksqlv1RzocuAgB1RXigbv",
-      "Favour's Resume.pdf"
+      "google drive url",
+      "Resume.pdf"
     )
   }
 
@@ -41,7 +41,7 @@ const Home = () => {
       <div className="home-text">
         <h1>
           <span className='gradientText'>
-            Hi, I'm Favour!
+            Hi, I'm Lorem!
           </span>
           <span>
             <span onClick={handleChange}>
@@ -56,9 +56,6 @@ const Home = () => {
           cursorColor="#1da1f2"
           multiText={[
             'Web Developer',
-            'Open Source Enthusiast',
-            'Love to add VALUE',
-            'Content Creator',
             "Don't Forget to Scroll"
           ]}
           multiTextLoop={true}
