@@ -5,18 +5,18 @@ import '../styles/Projects.css';
 const Projects = () => {
   const projectsInfo = {
     trick: {
-      name: 'Code Magic',
-      desc: 'A website to help you get simple tricks you can use in your applications',
-      liveLink: 'http://code-magic.vercel.app/',
-      githubLink: 'https://github.com/Dun-sin/code-magic',
+      name: 'Project 1',
+      desc: 'congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed',
+      liveLink: 'website url',
+      githubLink: 'https://github.com/',
       techs: ['HTML', 'CSS', 'TypeScript'],
       isOpenSource: true
     },
     anon: {
       name: 'Whisper',
-      desc: 'An app to help you chat in secret',
-      liveLink: 'https://whischat.vercel.app/',
-      githubLink: 'https://github.com/Dun-sin/whisper',
+      desc: 'congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed',
+      liveLink: 'website url',
+      githubLink: 'https://github.com/',
       techs: ['React', 'Node', 'MongoDB', 'Socket.io', 'Redux'],
       isOpenSource: true
     }
