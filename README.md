@@ -14,6 +14,10 @@ Provides static frontend template to present the work portfolio
  - Option to link Resume and allow other parties to download.
  - Section to provider contact information.
  - Option to draft and send an email.
+
+## Technology stack
+- react 
+- email.js
  
 ## Prerequisite to run the react app
 
@@ -28,4 +32,4 @@ Node and npm is configured.
     or
    template-portfolio-main > PORT=3001 npm start (to run on specific port 3001)
 4. Access - http://localhost:<PORT> Ex. http://localhost:3000
-	```
+```
