@@ -1,5 +1,6 @@
 :root {
 	--skill-color: black;
+  --skill-color-light: #6253e8;
 	--container-width: 600px;
 	--skill-size: calc(var(--container-width) / 5);
 }
@@ -38,6 +39,11 @@
 	transition: all 390ms ease-in-out;
 	margin-bottom: -5px;
 }
+
+.light .skill svg {
+	color: var(--skill-color-light);
+	transition: all 0.5s;
+  }
 
 .js:hover {
 	--skill-color: #fddd00;

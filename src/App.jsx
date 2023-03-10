@@ -1,5 +1,6 @@
 import './styles/App.css';
 
+import { useState } from 'react';
 import { animateScroll } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
 
@@ -16,13 +17,19 @@ import Mail from './Components/Mail';
 import { CgArrowLongUp } from 'react-icons/cg';
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const toggleTheme = () => {
+    setIsDarkMode(prevMode => !prevMode);
+  }
+
   return (
-    <div className='App'>
+    <div className={`App ${!isDarkMode ?'light' : ''}`}>
       <div>
-        <Nav />
+        <Nav isDarkMode={isDarkMode} handleToggle={toggleTheme} />
         <Home />
       </div>
-      <div className='dark'>
+      <div className={`dark ${!isDarkMode ?'light' : ''}`}>
         <Fade fraction={.2} triggerOnce>
           <Projects />
         </Fade>
@@ -41,7 +48,7 @@ function App() {
           <Mail />
         </Fade>
       </div>
-      <div className='dark'>
+      <div className={`dark ${!isDarkMode ?'light' : ''}`}>
         <Fade fraction={.2} triggerOnce>
           <p>Thank you for scrolling💘</p>
           <div className='arrow' onClick={() => animateScroll.scrollToTop()}>

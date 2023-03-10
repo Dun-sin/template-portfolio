@@ -14,6 +14,17 @@
 	position: relative;
 }
 
+.light .project {
+	background-color: #d8e6ff;
+	color: #000;
+	transition: all 0.5s;
+}
+
+.light .open {
+	background-color: #000;
+	color: #fff;
+}
+
 .project > p {
 	margin-top: -1.2rem;
 }
@@ -21,6 +32,11 @@
 .project .tech-stack {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.light .tech-stack {
+	color: #fff;
+	transition: all 0.5s;
 }
 
 .project .tech-stack div {
