@@ -18,12 +18,27 @@
 	color: #f5f5f5;
 }
 
+.light .entry input,
+.light .entry textarea{
+  background-color: #f5f5f5;
+  color: #000;
+  transition: all 0.5s;
+}
+
 .entry input:active,
 .entry textarea:active,
 .entry input:focus,
 .entry textarea:focus {
 	outline: none;
 	background-color: #181721;
+}
+
+.light .entry input:active,
+.light .entry textarea:active,
+.light .entry input:focus,
+.light .entry textarea:focus {
+	outline: none;
+	background-color: #f5f5f5;
 }
 
 .entry input {
@@ -127,6 +142,10 @@
 	place-items: center;
 	border-radius: 5px;
 	margin-top: 10px;
+}
+
+.light .btn{
+	color: #fff;
 }
 
 @media only screen and (max-width: 600px) {

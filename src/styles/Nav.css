@@ -17,6 +17,12 @@
 	background-color: #232135;
 }
 
+.header.light {
+	background: var(--gradient);
+	color: #f5f5f5;
+	transition: all 1s;
+  }
+
 .nav h1 {
 	font-size: calc(1vw + 1.3rem);
 	cursor: pointer;
@@ -40,6 +46,28 @@
 	cursor: pointer;
 	border-image-source: linear-gradient(to right, #6253e8, #1da1f2);
 }
+
+.menu-and-theme{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.2rem;
+}
+
+.theme-switch{
+	margin-left: 3rem;
+	background: transparent !important;
+	transition: all 0.6s;
+	cursor: pointer;
+}
+
+.theme-switch > svg{
+	color: #fff;
+	width: 1.2rem;
+	height: 1.2rem;
+	transition: all 1s;
+}
+
 
 .menu {
 	display: none;
@@ -73,6 +101,11 @@
 		z-index: 16;
 	}
 
+	.light .small{
+		background-color: #1da1f2;
+		color: #fff;
+	}
+
 	.small > ul {
 		flex-direction: column;
 		padding: 0;
@@ -83,5 +116,11 @@
 		width: fit-content;
 		text-align: center;
 		font-size: calc(1vw + 1.6rem);
+	}
+
+	.theme-switch{
+		margin-left: 0rem;
+		background: transparent !important;
+		transition: all 0.6s;
 	}
 }

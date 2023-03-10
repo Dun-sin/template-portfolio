@@ -3,11 +3,26 @@
 	padding-right: 10rem;
 }
 
+.App.light {
+	color: #000;
+	background-color: #f5f5f5;
+	transition: all 0.5s;
+}
+
+.App.light .light {
+	color: #fff;
+	background: linear-gradient(to bottom left, #1da1f2, #6253e8);
+	box-shadow: none;
+	transition: all 1s;
+}
+
 .dark {
 	box-shadow: 30px 20px 5px #232135;
 	background-color: #181721;
 	padding-top: 100px;
 	padding-bottom: 100px;
+	color: #fff;
+	transition: all 0.5s;
 }
 
 h2 {
@@ -33,10 +48,16 @@ h2 {
 	display: grid;
 	place-items: center;
 	cursor: pointer;
+	transition: all 0.5s;
 }
 
 .arrow svg {
 	color: #6253e8;
+}
+
+.light .arrow{
+	background-color: #f5f5f5;
+	transition: all 0.5s;
 }
 
 @media only screen and (max-width: 800px) {
