@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import '../styles/Mail.css'
 
-import { send } from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 const Mail = () => {
   const radio = useRef();
@@ -17,6 +17,7 @@ const Mail = () => {
     rest: false
   }
   const error = useRef()
+  const formResMsg = useRef()
 
   const validation = (email, name, message, subject) => {
     const acceptedEmail = ['gmail.com', 'yahoo.com', 'yahoo.co.in', 'outlook.com', 'protonmail.com', 'aol.com', 'icloud.com', 'me.com', 'mac.com', 'gmx.com', 'hey.com']
@@ -50,16 +51,16 @@ const Mail = () => {
     if (!condition) {
       error.current.style.display = 'block'
     } else {
-//       Using email.js to send emails https://www.emailjs.com/docs/sdk/installation/
-//       use .env to store ids and keys from email.js
-//       send(serviceID, templateID, {
-//         subject: toSend.subject,
-//         name: toSend.name,
-//         email: toSend.email,
-//         message: toSend.message,
-//       }, publicKey);
-      error.current.style.display = 'none'
-      reset();
+      // Using email.js to send emails https://www.emailjs.com/docs/sdk/installation/
+      // use .env to store ids and keys from email.js
+      // emailjs.send(serviceID, templateID, toSend, publicKey)
+      //   .then((response) => {
+      //     formResMsg.current.innerText = "Message sent..."
+      //     reset();
+      //   }, (err) => {
+      //     formResMsg.current.innerText = "Failed... " + err.text
+      // });
+      // error.current.style.display = 'none'
     }
   }
 
@@ -142,6 +143,7 @@ const Mail = () => {
             <textarea name="message" cols="30" rows="10" value={toSend.message} onChange={handleChange}></textarea>
           </div>
           <p style={{ color: 'red !important', display: 'none' }} ref={error}>Something is missing</p>
+          <p style={{ color: 'red !important' }} ref={formResMsg}></p>
           <div className='btn' onClick={handleClick}>Send Message</div>
         </div>
       </div>
