@@ -1,22 +1,27 @@
 :root {
 	--skill-color: black;
-  --skill-color-light: #6253e8;
+	--skill-color-light: #6253e8;
 	--container-width: 600px;
 	--skill-size: calc(var(--container-width) / 5);
 }
 
 .skills {
-	width: var(--container-width);
+	width: 100%;
+}
+
+.right{
+	display: flex;
 }
 
 .skill {
 	display: flex;
 	flex-wrap: wrap;
+
+	justify-content: center;
 }
 
 .skill div {
-	margin-right: 20px;
-	margin-bottom: 20px;
+	margin: .5em;
 	min-height: var(--skill-size);
 	width: var(--skill-size);
 	background-color: #ffffffe6;
@@ -43,7 +48,7 @@
 .light .skill svg {
 	color: var(--skill-color-light);
 	transition: all 0.5s;
-  }
+}
 
 .js:hover {
 	--skill-color: #fddd00;
