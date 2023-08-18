@@ -43,8 +43,9 @@
 	flex-direction: column;
 }
 
-.error{
+.error p{
 	color: red;
+	display: none;
 }
 
 .entry input,
