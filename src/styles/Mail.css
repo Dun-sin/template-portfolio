@@ -7,10 +7,50 @@
 	padding-bottom: 80px;
 }
 
+.entry{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.entry > div{
+	width: 50%;
+}
+
+.entry > div > div{
+	margin: 1em;
+	width: 100%;
+}
+
+.left > div{
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+}
+
+.left > div > div{
+	display: flex;
+	flex-direction: column;
+}
+
+.right > div > div{
+	display: flex;
+	flex-direction: column;
+}
+
+.right > div{
+	display: flex;
+	flex-direction: column;
+}
+
+.error{
+	color: red;
+}
+
 .entry input,
 .entry textarea {
 	background-color: #181721;
-	width: var(--input-width);
+	width: 90%;
 	border: 1px solid #6253e8;
 	border-radius: 4px;
 	caret-color: #6253e8;
@@ -62,7 +102,9 @@
 
 .options {
 	padding-top: 20px;
+	margin-bottom: .5em;
 	display: flex;
+	flex-direction: row !important;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	width: var(--input-width);
@@ -137,15 +179,36 @@
 	cursor: pointer;
 	background-color: #6253e8;
 	width: calc(calc(var(--input-width) / 2) + 20px);
-	min-height: 35px;
+	width: 90%;
 	display: grid;
 	place-items: center;
 	border-radius: 5px;
 	margin-top: 10px;
+	padding: .5em;
 }
 
 .light .btn{
 	color: #fff;
+}
+
+@media (max-width: 767px) {
+  .entry > div{
+	width: 100%;
+  }
+}
+
+/* Styles for devices with a minimum width of 768px and a maximum width of 1023px (Tablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .entry > div{
+	width: 100%;
+  }
+}
+
+/* Styles for devices with a minimum width of 1024px (Desktop) */
+@media (min-width: 1024px) {
+ .entry > div{
+	width: 50%;
+ }
 }
 
 @media only screen and (max-width: 600px) {
